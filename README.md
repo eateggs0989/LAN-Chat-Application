@@ -8,7 +8,7 @@ A real-time LAN chat web application built using Flask, JavaScript, HTML, and CS
 
 - Real-time messaging
 - File upload and sharing
-- Image preview system
+- Image preview system 
 - Syntax-highlighted code blocks
 - Copy code button
 - Responsive dark UI
