@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAN Chat</title>
+
+    <!-- Prism Theme (Dark IDE Look) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar-content">
+            <h3>Settings</h3>
+            <label>Name:</label>
+            <input type="text" id="sidebarNameInput" placeholder="Enter your name">
+            <button id="saveNameBtn">Save</button>
+        </div>
+    </div>
+
+    <!-- OVERLAY -->
+    <div id="overlay"></div>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+    <header>
+        <button id="menuBtn">☰</button>
+        <span>LAN Chat</span>
+    </header>
+
+    <!-- =========================
+         CHAT AREA
+    ========================== -->
+    <div id="chatContainer">
+        <div id="chatBox"></div>
+    </div>
+
+    <!-- FILE PREVIEW (ABOVE INPUT) -->
+    <div id="filePreview"></div>
+
+    <!-- =========================
+         INPUT AREA
+    ========================== -->
+    <div id="inputArea">
+        <div class="input-wrapper">
+            <button id="uploadBtn">+</button>
+            <input type="file" id="fileInput">
+            <textarea id="messageInput" placeholder="Message..."></textarea>
+            <button id="sendBtn">Send</button>
+        </div>
+    </div>
+
+    <!-- =========================
+         Prism JS (Load at Bottom for Performance)
+    ========================== -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markup.min.js"></script>
+
+    <!-- Your Chat Script -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <!-- IMAGE ZOOM MODAL -->
+    <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+    <img id="modalImage">
+</div>
+</body>
+</html>
