@@ -1,8 +1,10 @@
+
 - LAN-Chat-Application
 Developed a real-time LAN chat web application using Flask, JavaScript, HTML, and CSS. Implemented messaging, file sharing, image preview, syntax-highlighted code blocks, local storage, and responsive UI features for local network communication.
 
 
 A real-time LAN chat web application built using Flask, JavaScript, HTML, and CSS.
+<img width="1900" height="899" alt="Screenshot 2026-05-17 012032" src="https://github.com/user-attachments/assets/27401144-c46e-435a-b215-54f4f7ea97d0" />
 
 -- Features
 
